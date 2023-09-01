@@ -1,5 +1,5 @@
 site_name: Weave Docs
-repo_url: https://github.com/Quadro1337/weave-docs/upload/main
+repo_url: https://github.com/Quadro1337/weave-docs
 
 extra_css:
   - stylesheets/extra.css
