@@ -1,0 +1,17 @@
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: rgb(29, 29, 29);
+  --md-primary-fg-color--light: #FF8A60;
+  --md-primary-fg-color--dark: #FE6731;
+  --md-typeset-a-color: #FE6731;
+  --md-accent-fg-color: #FF8A60;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+}
+
+.opacity-50 {
+  opacity: 50%;
+}

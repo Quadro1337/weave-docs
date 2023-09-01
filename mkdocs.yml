@@ -1,0 +1,101 @@
+site_name: Weave Docs
+repo_url: https://github.com/Quadro1337/weave-docs/upload/main
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  name: material
+  palette:
+    scheme: slate
+    primary: slate
+    accent: slate
+  font:
+    text: Inter
+    code: Source Code Pro
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/vk
+      name: VK
+      link: https://vk.com/weave_csgo
+
+    - icon: fontawesome/brands/discord
+      name: Discord
+      link: https://discord.gg/dEKp7vqQeu
+
+    - icon: fontawesome/brands/telegram
+      name: Telegram
+      link: https://t.me/weave_csgo
+
+copyright: Weave Documentation
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - 🚀 Getting started: index.md
+  - 💡 Events: events.md
+  - 🌐 Namespaces:
+    - 💥 Anti-aim: namespaces/anti-aim.md
+    - 📄 Convars: namespaces/convars.md
+    - 🧍‍♂️ Entity: namespaces/entity.md
+    - 🧩 Global vars: namespaces/global-vars.md
+    - 💭 Logs: namespaces/logs.md
+    - 🪢 Math: namespaces/math.md
+    - ✴️ Cheat Vars: namespaces/cheat-vars.md
+    - 🏞️ Render: namespaces/render.md
+    - 🧾 UI: namespaces/ui.md
+    - 💩 Cheat: namespaces/cheat.md
+    - 🔗 Client: namespaces/client.md
+    - 🎲 Script: namespaces/script.md
+    - 🪢 Hotkeys: namespaces/hotkeys.md
+  - ✨ Types:
+    - 🌈 Color: types/color.md
+    - 📄 Convar: types/convar.md
+    - 🧍‍♂️ Entity: types/entity.md
+    - 💡 Event: types/event.md
+    - 🆎 Font: types/font.md
+    - 🧭 Texture: types/texture.md
+    - ✴️ CheatVar: types/cheat-var.md
+    - 🔗 Anti-aim settings: types/anti-aim-settings.md
+    - 🌃 UserCmd: types/user-cmd.md
+    - ⚙️ Vector: types/vector.md
+    - 🪢 Hotkey: types/hotkey.md
+    - 🧾 UI:
+      - ⚙️ Tab: types/ui/tab.md
+      - ⚙️ Node: types/ui/node.md
+      - ⚙️ Control: types/ui/control.md
+      - ⚙️ Container: types/ui/container.md
+      - 📑 Controls:
+        - 🔗 Checkbox: types/ui/controls/checkbox.md
+        - 🔗 Slider: types/ui/controls/slider.md
+        - 🔗 Dropbox: types/ui/controls/dropbox.md
+        - 🔗 Color picker: types/ui/controls/color-picker.md
+        - 🔗 Button: types/ui/controls/button.md
