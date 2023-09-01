@@ -32,6 +32,8 @@ checkbox:add(nested_checkbox)
 ![Image title](/assets/nesting_example.png)
 
 ## Functions
+
+### Controls
 |Function name|Return value|Arguments|Description|
 |:-|:-|:-|:-|
 |tab|[`UITab`](/types/ui/tab)\|`nil`|label: `string`|Creates tab instance|
@@ -43,5 +45,14 @@ checkbox:add(nested_checkbox)
 |button|[`UIButton`](/types/ui/controls/button)\|`nil`|label: `string`[, callback: `function`]|None|
 |text|[`UINode`](/types/ui/node)\|`nil`|value: `string`[, color: [`Color`](/types/color), bold: `boolean`]|None|
 |register_tab|`void`|tab: [`UITab`](/types/ui/tab)|Adds tab to the menu|
+
+### Misc
+|Function name|Return value|Arguments|Description|
+|:-|:-|:-|:-|
 |update|`void`|None|Performs a complete UI update|
-|override_accent|`void`|color1: [`Color`](/types/color), color2: [`Color`](/types/color)|Overrides accent color|
+|get_accent|[`Color`](/types/color), [`Color`](/types/color)|None|Returns current accent colors|
+|override_accent|`void`|color1: [`Color`](/types/color), color2: [`Color`](/types/color)|Overrides accent colors|
+|get_menu_position|[`Vector`](/types/vector)|None|Returns current menu position|
+|set_menu_position|None|[`Vector`](/types/vector)|Sets menu position|
+|get_menu_size|[`Vector`](/types/vector)|None|Returns current menu size|
+|get_dpi_scale|`number`|None|Returns current DPI scale|

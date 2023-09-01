@@ -29,3 +29,4 @@ end)
 |create_texure|[`Texture`](/types/texture)\|`nil`|path: `string`|:material-alert: Function won't work inside the callbacks. The only way to create [`Texture`](/types/texture) is create it on the first lines in your script|
 |world_to_screen|[`Vector`](/types/vector)\|nil|world_position: [`Vector`](/types/vector)|None|
 |get_screen_size|[`Vector`](/types/vector)|None|None|
+|text_size|[`Vector`](/types/vector)|font: [`Font`](/types/font), text: `string`[, wrap_width: `number`]|None|
