@@ -6,7 +6,7 @@ None
 ## Usage
 
 ```lua
-callback.new('create_move', function()
+callback.create_move(function()
     local me = entity.get(entity.get_local_player())
     if not me then
         return

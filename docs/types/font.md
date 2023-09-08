@@ -8,7 +8,7 @@ None
 ```lua
 local verdana = render.create_font('C:\\Windows\\Fonts\\Verdana.ttf', 14)
 
-callback.new('render', function()
+callback.render(function()
     render.text(verdana, 'Hello world!', vector(100, 100))
 end)
 ```

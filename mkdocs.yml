@@ -31,6 +31,10 @@ theme:
 extra:
   generator: false
   social:
+    - icon: fontawesome/brands/github
+      name: Github
+      link: https://github.com/Quadro1337/weave-docs
+
     - icon: fontawesome/brands/vk
       name: VK
       link: https://vk.com/weave_csgo
@@ -88,6 +92,7 @@ nav:
     - 🌃 UserCmd: types/user-cmd.md
     - ⚙️ Vector: types/vector.md
     - 🪢 Hotkey: types/hotkey.md
+    - ⚙️ CheatConfig: types/cheat-config.md
     - 🧾 UI:
       - ⚙️ Tab: types/ui/tab.md
       - ⚙️ Node: types/ui/node.md

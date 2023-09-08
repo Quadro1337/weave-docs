@@ -6,7 +6,7 @@ None
 ## Usage
 
 ```lua
-callback.new('antiaim_setup', function(settings)
+callback.antiaim_setup(function(settings)
     settings.jitter_angle = 15
 end)
 ```

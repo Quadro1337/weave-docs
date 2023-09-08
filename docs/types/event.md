@@ -6,7 +6,7 @@ None
 ## Usage
 
 ```lua
-callback.new('player_hurt', function(event)
+callback.player_hurt(function(event)
   print(event:get_int('user_id'))
 end)
 ```

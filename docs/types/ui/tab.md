@@ -1,7 +1,7 @@
 # Tab
 
 ## Description
-An abstraction that provides access to work with menu tab.
+`UITab` is abstraction that provides access to work with menu tab.
 
 ## Members
 |Name|Type|Description|

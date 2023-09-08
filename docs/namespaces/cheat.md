@@ -14,4 +14,4 @@ print(cheat.username())
 |:-|:-|:-|:-|
 |username|`string`|None|None|
 |build_date|`string`|None|None|
-|print|`void`|output: `any`[, ...]|Prints output to the console|
+|print|`void`|output: `string`|Prints output to the console|

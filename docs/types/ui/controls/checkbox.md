@@ -11,7 +11,7 @@ local checkbox = ui.checkbox('My checkbox')
 tab:add(checkbox)
 tab:register()
 
-callback.new('render', function()
+callback.render(function()
     print(checkbox:get())
 end)
 ```

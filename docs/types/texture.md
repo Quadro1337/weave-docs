@@ -7,7 +7,7 @@ None
 
 ```lua
 local texture = render.create_texture('weave/assets/image.png')
-callback.new('render', function()
+callback.render(function()
     render.image(texture, vector(100, 100), vector(200, 200))
 end)
 ```

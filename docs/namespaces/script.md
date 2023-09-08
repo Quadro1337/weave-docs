@@ -8,31 +8,7 @@ As you may know Weave is saving cheat settings on the servers. But all script's 
 
 ## Example
 
-```lua
-local script_name = 'My script' -- define the script name
-script.set_name(script_name) -- set script name
-script.set_version('1.1')
-
-local tab = ui.tab(script_name) -- create tab
-
-local checkbox = ui.checkbox('My checkbox') -- create checkbox
-checkbox:set(true) -- set true as default value
-checkbox:set_key('my_checkbox') -- set key for checkbox
-
-tab.left:add(checkbox) -- add checkbox to tab
-
-tab.left:add(ui.button('Save', function()
-    script.save_all('my_script_settings') -- save our checkbox state
-    log.info('\"', script_name, '\"', 'is saved!') -- notify user
-end))
-
-tab.left:add(ui.button('Load', function()
-    script.load_all('my_script_settings') -- load our checkbox state
-    log.info('\"', script_name, '\"', 'is loaded!') -- notify user
-end))
-
-ui.register_tab(tab)
-```
+Example can be found **[here](/namespaces/ui/#config-system)**
 
 ## Configuration
 
@@ -42,7 +18,7 @@ ui.register_tab(tab)
 |:-|:-|:-|:-|
 |save|`void`|name: `string`, items: [`UIControl`](/types/ui/control)[, ...]|Saves the passed [`UIControl`](/types/ui/control) states|
 |save_all|`void`|name: `string`|Saves the all [`UIControl`](/types/ui/control) states|
-|dump_base64|`string`\|`nil` if failure|items: [`UIControl`](/types/ui/control)[, ...]|Return the passed [`UIControl`](/types/ui/control) states from base64 string|
+|dump_base64|`string`\|`nil`|items: [`UIControl`](/types/ui/control)[, ...]|Return the passed [`UIControl`](/types/ui/control) states from base64 string|
 |dump_all_base64|`string`\|`nil`|None|Return the all [`UIControl`](/types/ui/control) states encoded in base64|
 |load|`void`|name: `string`, items: [`UIControl`](/types/ui/control)[, ...]|Loads the passed [`UIControl`](/types/ui/control) states|
 |load_all|`void`|name: `string`|Loads the all [`UIControl`](/types/ui/control) states|

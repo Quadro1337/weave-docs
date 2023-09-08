@@ -6,7 +6,7 @@ None
 ## Usage
 
 ```lua
-callback.new('create_move', function(cmd)
+callback.create_move(function(cmd)
     print(cmd.command_number)
 end)
 ```

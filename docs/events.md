@@ -3,35 +3,28 @@
 ## Usage
 
 ```lua
-local callback = function(arg)
+local fn = function(arg)
     ...
 end
 
-callback.new('callback_name', callback)
-callback.callback_name(callback) -- the same
+callback.new('callback_name', fn)
+callback.callback_name(fn) -- the same
 ```
 
 ## List of the events
 
 ### Custom events
 
-#### `render`
-Fires every frame. Most functions from the [`render`](/namespaces/render) namespace can only be used here.
-
-#### `pre_move`
-Takes [`UserCmd`](/types/user-cmd) in argument
-
-#### `create_move`
-Takes [`UserCmd`](/types/user-cmd) in argument
-
-#### `post_move`
-Takes [`UserCmd`](/types/user-cmd) in argument
-
-#### `antiaim_setup`
-Fires on setting up Anti-aim settings. Takes [`AntiAimSettings`](/types/anti-aim-settings) in argument
-
-#### `unload`
-Fires before script unload.
+|Name|Arguments|Description|
+|:-|:-|:-|
+|`render`|None|Fires every frame. Most functions from the [`render`](/namespaces/render) namespace can only be used here.|
+|`pre_move`|cmd: [`UserCmd`](/types/user-cmd)|None|
+|`create_move`|cmd: [`UserCmd`](/types/user-cmd)|None|
+|`post_move`|cmd: [`UserCmd`](/types/user-cmd)|None|
+|`antiaim_setup`|config: [`AntiAimSettings`](/types/anti-aim-settings)|Fires on setting up Anti-aim settings|
+|`config_save`|config: [`CheatConfig`](/types/cheat-config)|Fires on any config is saved|
+|`config_load`|config: [`CheatConfig`](/types/cheat-config)|Fires on any config is loaded|
+|`unload`|None|Fires before script unload|
 
 ### Game events
 Cheat supports all **[CS:GO events](https://wiki.alliedmods.net/Counter-Strike:_Global_Offensive_Events)**.

@@ -6,7 +6,7 @@ None
 ## Usage
 
 ```lua
-callback.new('render', function()
+callback.render(function()
     render.filled_rect(vector(100, 100), vector(200, 200), color(255, 255, 255))
 end)
 ```
