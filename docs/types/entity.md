@@ -12,7 +12,7 @@ callback.create_move(function()
         return
     end
 
-    print(me:get_prop('DT_CSPlayer', 'm_vecVelocity'))
+    print(me:get_prop('DT_CSPlayer', 'm_iHealth'))
 end)
 ```
 
@@ -20,3 +20,5 @@ end)
 |Name|Type|Description|
 |:-|:-|:-|
 |:get_prop(table: `string`, prop: `string`): `any`|`function`|None|
+|:get_origin(): [`Vector`](/types/vector)|`function`|None|
+|:get_velocity(): [`Vector`](/types/vector)|`function`|None|
