@@ -17,3 +17,4 @@ None
 |:-|:-|:-|
 |:get(): `number`|`function`|None|
 |:set(value: `number`): `void`|`function`|None|
+|:set_callback(callback: `function`): `void`|`function`|None|

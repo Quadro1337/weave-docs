@@ -50,16 +50,32 @@ checkbox:set_key('my_checkbox') -- set key for checkbox
 tab.left:add(checkbox) -- add checkbox to tab
 
 tab.left:add(ui.button('Save', function()
-    script.save_all('my_script_settings') -- save our checkbox state
-    logs.info('\"', script_name, '\"', 'is saved!') -- notify user
+    local err = script.save_all('my_script_settings') -- save our checkbox state
+    if err then
+        logs.error('failed to save:', '\"', script_name, '\"', ':', err) -- notify user
+    else
+        logs.info('\"', script_name, '\"', 'is saved!') -- notify user
+    end
 end))
 
 tab.left:add(ui.button('Load', function()
-    script.load_all('my_script_settings') -- load our checkbox state
-    logs.info('\"', script_name, '\"', 'is loaded!') -- notify user
+    local err = script.load_all('my_script_settings') -- save our checkbox state
+    if err then
+        logs.error('failed to load:', '\"', script_name, '\"', ':', err) -- notify user
+    else
+        logs.info('\"', script_name, '\"', 'is loaded!') -- notify user
+    end
 end))
 
 tab:register()
+```
+
+### Slider formatting
+
+```lua
+local slider = ui.slider('Thirdperson distance', 30, 150, function(value)
+    return tostring(value) .. ' units'
+end)
 ```
 
 ## Functions
@@ -70,7 +86,7 @@ tab:register()
 |tab|[`UITab`](/types/ui/tab)\|`nil`|label: `string`|Creates tab instance|
 |group|[`UIContainer`](/types/ui/container)\|`nil`|label: `string`|Creates group instance|
 |checkbox|[`UICheckbox`](/types/ui/controls/checkbox)\|`nil`|label: `string`|None|
-|slider|[`UISlider`](/types/ui/controls/slider)\|`nil`|label: `string`, min: `number`, max: `number`|None|
+|slider|[`UISlider`](/types/ui/controls/slider)\|`nil`|label: `string`, min: `number`, max: `number`[, format: `function`]|None|
 |dropbox|[`UIDropbox`](/types/ui/controls/dropbox)\|`nil`|label: `string`, multiselect: `boolean`, items: `any`[, ...]|None|
 |color_picker|[`UIColorPicker`](/types/ui/controls/color-picker)\|`nil`|label: `string`[, alpha: `bool`]|None|
 |button|[`UIButton`](/types/ui/controls/button)\|`nil`|label: `string`[, callback: `function`]|None|
@@ -87,3 +103,6 @@ tab:register()
 |set_menu_position|None|position: [`Vector`](/types/vector)|Sets menu position|
 |get_menu_size|[`Vector`](/types/vector)|None|Returns current menu size|
 |get_dpi_scale|`number`|None|Returns current DPI scale|
+|get_mouse_position|[`Vector`](/types/vector)|None|Returns mouse position|
+|get_mouse_wheel|[`Vector`](/types/vector)|None|Returns mouse wheel delta|
+|is_mouse_pressed|`boolean`|[lmb: `boolean`]|Returns `true` if mouse is pressed|

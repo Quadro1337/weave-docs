@@ -1,0 +1,13 @@
+!!! abstract "28.09.2023"
+    - Added callback [`ragebot_setup`](/events/#custom-events)
+    - Added ID field in [`AntiAimSettings`](/types/anti-aim-settings)
+    - Added [`get_name`](/types/entity/#members) function to [`Entity`](/types/entity)
+    - Added [`pattern_scan`](/namespaces/_G/#pattern_scan)
+    - Added [`create_interface`](/namespaces/_G/#create_interface)
+    - Added possibility to [override format](/namespaces/ui/#slider-formatting) function to slider
+    - Added [`set_callback`](/types/ui/controls/checkbox/#members) function to [`Checkbox`](/types/ui/controls/checkbox)
+    - Added [`set_callback`](/types/ui/controls/slider/#members) function to [`Slider`](/types/ui/controls/checkbox)
+    - Added [`ui.get_mouse_position`](/namespaces/ui/#misc)
+    - Added [`ui.get_mouse_wheel`](/namespaces/ui/#misc)
+    - Added [`ui.is_mouse_pressed`](/namespaces/ui/#misc)
+    - Now all functions related to saving & loading script settings will return `string`|`nil` (text of error or `nil` if there's no error). More detailed information see [**here**](/namespaces/script/#configuration)

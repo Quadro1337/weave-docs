@@ -22,6 +22,7 @@ callback.callback_name(fn) -- the same
 |`create_move`|cmd: [`UserCmd`](/types/user-cmd)|None|
 |`post_move`|cmd: [`UserCmd`](/types/user-cmd)|None|
 |`antiaim_setup`|config: [`AntiAimSettings`](/types/anti-aim-settings)|Fires on setting up Anti-aim settings|
+|`ragebot_setup`|config: [`RagebotSettings`](/types/ragebot-settings)|Fires on setting up Ragebot settings|
 |`config_save`|config: [`CheatConfig`](/types/cheat-config)|Fires on any config is saved|
 |`config_load`|config: [`CheatConfig`](/types/cheat-config)|Fires on any config is loaded|
 |`unload`|None|Fires before script unload|

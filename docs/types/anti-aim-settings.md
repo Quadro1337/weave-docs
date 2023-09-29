@@ -14,6 +14,7 @@ end)
 ## Members
 |Name|Type|Description|
 |:-|:-|:-|
+|id|`number`|ID of current config|
 |force_off|`boolean`|None|
 |pitch|`number`|None|
 |ignore_freestand|`boolean`|None|

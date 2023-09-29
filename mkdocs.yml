@@ -67,6 +67,7 @@ nav:
   - 🚀 Getting started: index.md
   - 💡 Events: events.md
   - 🌐 Namespaces:
+    - 🌍 _G: namespaces/_G.md
     - 💥 Anti-aim: namespaces/anti-aim.md
     - 📄 Convars: namespaces/convars.md
     - 🧍‍♂️ Entity: namespaces/entity.md
@@ -89,6 +90,7 @@ nav:
     - 🧭 Texture: types/texture.md
     - ✴️ CheatVar: types/cheat-var.md
     - 🔗 Anti-aim settings: types/anti-aim-settings.md
+    - 🔗 Ragebot settings: types/ragebot-settings.md
     - 🌃 UserCmd: types/user-cmd.md
     - ⚙️ Vector: types/vector.md
     - 🪢 Hotkey: types/hotkey.md
@@ -104,3 +106,4 @@ nav:
         - 🔗 Dropbox: types/ui/controls/dropbox.md
         - 🔗 Color picker: types/ui/controls/color-picker.md
         - 🔗 Button: types/ui/controls/button.md
+  - 🧾 Updates: updates.md

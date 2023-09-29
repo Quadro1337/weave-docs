@@ -13,7 +13,7 @@ Scripts are located in the CS:GO folder `/weave/lua`
 
 ## Hello world
 ```lua title="hello_world.lua"
-print('Hello world')
+logs.info('Hello world')
 ```
 
 ## Common used pages

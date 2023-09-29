@@ -24,3 +24,4 @@ end)
 |:-|:-|:-|
 |:get(): `boolean`|`function`|None|
 |:set(value: `boolean`): `void`|`function`|None|
+|:set_callback(callback: `function`): `void`|`function`|None|

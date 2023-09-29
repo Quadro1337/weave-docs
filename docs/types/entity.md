@@ -7,7 +7,7 @@ None
 
 ```lua
 callback.create_move(function()
-    local me = entity.get(entity.get_local_player())
+    local me = entity.me()
     if not me then
         return
     end
@@ -22,3 +22,4 @@ end)
 |:get_prop(table: `string`, prop: `string`): `any`|`function`|None|
 |:get_origin(): [`Vector`](/types/vector)|`function`|None|
 |:get_velocity(): [`Vector`](/types/vector)|`function`|None|
+|:get_name(): `string`|`function`|None|

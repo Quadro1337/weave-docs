@@ -6,10 +6,22 @@
   --md-accent-fg-color: #FF8A60;
 }
 
+.md-typeset__table{
+  display: block;
+}
+
+.md-typeset__table table{
+  display: table!important;
+}
+
+body {
+  width: 100vw;
+}
+
 .md-typeset .admonition,
 .md-typeset details {
-  border-width: 0;
-  border-left-width: 4px;
+border-width: 0;
+border-left-width: 4px;
 }
 
 .opacity-50 {
