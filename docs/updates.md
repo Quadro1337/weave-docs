@@ -1,3 +1,15 @@
+!!! abstract "03.10.2023"
+    - Added [`render.rect`](/namespaces/render/#draw-functions)
+    - Added [`render.circle`](/namespaces/render/#draw-functions)
+    - Added [`render.filled_circle`](/namespaces/render/#draw-functions)
+    - Added [`render.line`](/namespaces/render/#draw-functions)
+    - Added [`render.vertical_gradient`](/namespaces/render/#draw-functions)
+    - Added [`render.horizontal_gradient`](/namespaces/render/#draw-functions)
+    - Added [`render.filled_arc`](/namespaces/render/#draw-functions)
+    - Added [`render.arc`](/namespaces/render/#draw-functions)
+    - Added [`ui.get_menu_alpha`](/namespaces/ui)
+    - Added `side` in [`AntiAimSettings`](/types/anti-aim-settings)
+
 !!! abstract "28.09.2023"
     - Added callback [`ragebot_setup`](/events/#custom-events)
     - Added ID field in [`AntiAimSettings`](/types/anti-aim-settings)

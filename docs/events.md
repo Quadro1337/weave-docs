@@ -33,6 +33,6 @@ Takes the [`Event`](/types/event) in argument
 
 ```lua
 callback.player_hurt(function(event)
-  print(event:get_int('user_id'))
+  print(event:get_int('userid'))
 end)
 ```

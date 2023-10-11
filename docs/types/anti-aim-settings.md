@@ -15,6 +15,7 @@ end)
 |Name|Type|Description|
 |:-|:-|:-|
 |id|`number`|ID of current config|
+|side|`number`|Current side of the desync, `-1` or `1`|
 |force_off|`boolean`|None|
 |pitch|`number`|None|
 |ignore_freestand|`boolean`|None|

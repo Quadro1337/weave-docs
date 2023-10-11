@@ -106,3 +106,4 @@ end)
 |get_mouse_position|[`Vector`](/types/vector)|None|Returns mouse position|
 |get_mouse_wheel|[`Vector`](/types/vector)|None|Returns mouse wheel delta|
 |is_mouse_pressed|`boolean`|[lmb: `boolean`]|Returns `true` if mouse is pressed|
+|get_menu_alpha|`number`|None|None|
